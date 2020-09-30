@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Gender Wise",
+  "version": "0.0.1",
+  "author": "mhizterkeyz",
+  "description": "Make your textareas gender safe",
+  "permissions": ["activeTab", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
