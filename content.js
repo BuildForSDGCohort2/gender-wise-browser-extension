@@ -95,7 +95,7 @@ const launchGW = (elements = []) => {
   fetch("https://gender-wise.herokuapp.com/api/v1/regex")
     .then(res => res.json())
     .then(regex => {
-      regex = regex.data.replace(/\\/g, "\\\\");
+      regex = regex.data;
       if (!regex) return;
       Array.prototype.forEach.call(
         document.querySelectorAll("textarea"),
